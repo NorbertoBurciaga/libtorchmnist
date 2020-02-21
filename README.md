@@ -16,7 +16,7 @@ Pytorch C++ frontend implementation to recognize handwritten digits.
 
 ## What is LIBTORCHMNIST?
 
-Behavior Driven Development for recognition of the Modified National Institute of Standards and Technology database of handwritten digits
+Example project for recognition of the Modified National Institute of Standards and Technology database of handwritten digits
 
 [Contents](#contents)
 
