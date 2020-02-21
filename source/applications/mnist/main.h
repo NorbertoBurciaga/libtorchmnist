@@ -4,3 +4,4 @@
 #define LIBTORCHMNIST_VERSION_PATCH 1
 
 #define APPLICATION_NAME "mnist"
+#define DATA_DIRECTORY "../data"

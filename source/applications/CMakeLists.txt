@@ -1,4 +1,5 @@
 set (APPLICATION_NAME mnist)
+set (DATA_DIRECTORY "../data")
 
 # configure a header file to pass some of the CMake settings
 # to the source code
