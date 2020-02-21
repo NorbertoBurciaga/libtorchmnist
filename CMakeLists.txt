@@ -30,6 +30,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 #---------------------------------------- Packages ---------------------------------------
+# Find torch
+find_package(Torch REQUIRED)
 
 #---------------------------------------- Download data ----------------------------------
 if (DOWNLOAD_MNIST)
@@ -45,3 +47,4 @@ endif()
 
 #---------------------------------------- Directories ------------------------------------
 # add the CMakeLists.txt files located in subdirectories
+add_subdirectory(source)
