@@ -101,7 +101,7 @@ Remember your contributions represent your public reputation and that of DXC
 
 ## License
 
-See LICENSE file
+See [LICENSE](LICENSE) file
 
 [Contents](#contents)
 
