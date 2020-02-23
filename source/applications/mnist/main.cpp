@@ -2,25 +2,21 @@
 #include <torch/torch.h>
 
 #include "main.h"
+#include "TorchImplementation.h"
 
 using namespace std;
 
-torch::Device IdentifyDeviceType() {
-	if (torch::cuda::is_available()) {
-	    cout << "CUDA available! Training on GPU." << endl;
-	    return torch::kCUDA;
-	  } else {
-	    cout << "Training on CPU." << endl;
-	    return torch::kCPU;
-	  }
-}
 
 int main(int argc, char* argv[]) {
-	torch::Device device(IdentifyDeviceType());
+//	torch::Device device(IdentifyDeviceType());
+
+	TorchImplementation *torchImp = new TorchImplementation();
 
 	cout << DATA_DIRECTORY << endl;
 
 	torch::Tensor tensor = torch::rand({2, 3});
 	cout << tensor << endl;
+
+	delete torchImp;
 	return 0;
 }
