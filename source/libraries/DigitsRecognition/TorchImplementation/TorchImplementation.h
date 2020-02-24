@@ -3,6 +3,8 @@
 #include <iostream>
 #include <torch/torch.h>
 
+#include "TorchNetwork.h"
+
 using namespace std;
 
 class TorchImplementation {

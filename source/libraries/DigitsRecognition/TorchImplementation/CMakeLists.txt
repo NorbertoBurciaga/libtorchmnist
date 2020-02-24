@@ -1,6 +1,7 @@
 # Declare the library
 set ( torch_implementation_sources
 	TorchImplementation.cpp
+	TorchNetwork.cpp
 )
 
 add_library(TorchImplementation STATIC ${torch_implementation_sources})
