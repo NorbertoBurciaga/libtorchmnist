@@ -8,7 +8,14 @@ using namespace std;
 
 
 int main(int argc, char* argv[]) {
-//	torch::Device device(IdentifyDeviceType());
+
+	auto train_dataset = torch::data::datasets::MNIST(DATA_DIRECTORY)
+							.map(torch::data::transforms::Normalize<>(0.1307, 0.3081))
+							.map(torch::data::transforms::Stack<>());
+
+	auto test_dataset = torch::data::datasets::MNIST(DATA_DIRECTORY)
+							.map(torch::data::transforms::Normalize<>(0.1307, 0.3081))
+							.map(torch::data::transforms::Stack<>());
 
 	TorchImplementation *torchImp = new TorchImplementation();
 
