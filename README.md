@@ -24,7 +24,29 @@ Example project for recognition of the Modified National Institute of Standards 
 ## Project Hierarchy
 
 ```console
-
+.
+├── CMakeLists.txt
+├── download_mnist.py
+├── LICENSE
+├── README.md
+└── source
+    ├── applications
+    │   ├── CMakeLists.txt
+    │   └── mnist
+    │       ├── CMakeLists.txt
+    │       ├── main.cpp
+    │       ├── main.h
+    │       └── main.h.in
+    ├── CMakeLists.txt
+    └── libraries
+        ├── CMakeLists.txt
+        └── DigitsRecognition
+            ├── CMakeLists.txt
+            └── TorchImplementation
+                ├── CMakeLists.txt
+                ├── TorchNetwork.cpp
+                ├── TorchNetwork.h
+                └── TorchNetwork_test.cpp
 ```
 
 [Contents](#contents)
