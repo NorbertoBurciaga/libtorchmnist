@@ -8,8 +8,10 @@
 using namespace std;
 
 class TorchImplementation {
+	torch::Device device;
+	TorchNetwork model;
 public:
-	TorchImplementation();
+	TorchImplementation(torch::Device & device, TorchNetwork& model);
 	virtual ~TorchImplementation();
 };
 

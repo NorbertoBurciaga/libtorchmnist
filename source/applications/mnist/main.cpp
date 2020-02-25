@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
 	TorchNetwork model;
 	model.to(device);
 
-	TorchImplementation *torchImp = new TorchImplementation();
+	TorchImplementation *torchImp = new TorchImplementation(device, model);
 
 	torch::Tensor tensor = torch::rand({2, 3});
 	cout << tensor << endl;
