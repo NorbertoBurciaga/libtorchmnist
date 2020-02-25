@@ -130,6 +130,7 @@ See [LICENSE](LICENSE) file
 
 ## References
 
+1. [MNIST Example with the PyTorch C++ Frontend](https://github.com/pytorch/examples/tree/master/cpp/mnist)
 
 [Contents](#contents)
 
