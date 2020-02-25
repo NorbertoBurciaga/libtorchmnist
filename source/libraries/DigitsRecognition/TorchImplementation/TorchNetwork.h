@@ -11,6 +11,7 @@ class TorchNetwork : torch::nn::Module {
 	torch::nn::Linear fc2;
 public:
 	TorchNetwork();
+	void to(torch::Device device, bool non_blocking = false);
 	torch::Tensor forward(torch::Tensor x);
 	virtual ~TorchNetwork();
 };

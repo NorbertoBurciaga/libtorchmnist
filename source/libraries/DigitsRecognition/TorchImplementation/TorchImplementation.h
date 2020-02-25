@@ -8,8 +8,6 @@
 using namespace std;
 
 class TorchImplementation {
-	torch::Device *device;
-	torch::Device IdentifyDeviceType();
 public:
 	TorchImplementation();
 	virtual ~TorchImplementation();

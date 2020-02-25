@@ -11,6 +11,10 @@ TorchNetwork::TorchNetwork() :  conv1(torch::nn::Conv2dOptions(1, 10, /*kernel_s
 	register_module("fc2", fc2);
 }
 
+void TorchNetwork::to(torch::Device device, bool non_blocking) {
+	torch::nn::Module::to(device, non_blocking);
+}
+
 torch::Tensor TorchNetwork::forward(torch::Tensor x) {
 	x = torch::relu(torch::max_pool2d(conv1->forward(x),2));
 	x = torch::relu(torch::max_pool2d(conv2_drop->forward(conv2->forward(x)), 2));
@@ -23,4 +27,3 @@ torch::Tensor TorchNetwork::forward(torch::Tensor x) {
 
 TorchNetwork::~TorchNetwork() {
 }
-
