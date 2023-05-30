@@ -86,10 +86,10 @@ If you want to contribute:
 ### Process
 
 1. Review the Contribution License Agreement
-   1.1. Defines the terms under which intellectual property is contributed to a project
-   1.2. To ensure the owner of the project has the necessary ownership, or grants of rights over contributions made by third parties.
-   1.3. Must be signed by any contributor to a project who is making a "significant contribution".
-   1.4. Without that signed CLA the contribution will not be accepted.
+   1. Defines the terms under which intellectual property is contributed to a project
+   2. To ensure the owner of the project has the necessary ownership, or grants of rights over contributions made by third parties.
+   3. Must be signed by any contributor to a project who is making a "significant contribution".
+   4. Without that signed CLA the contribution will not be accepted.
 2. Check the project issues list
 3. Fork the repository
 4. Submit your contribution as a pull request
