@@ -54,6 +54,10 @@ Example project for recognition of the Modified National Institute of Standards 
 
 ## Getting Started
 
+1. Download libtorch from https://pytorch.org/get-started/locally/
+2. $ unzip libtorch-cxx11-abi-shared-with-deps-2.1.2+cpu.zip
+ 
+
 ```console
 libtorchmnist$ mkdir build
 libtorchmnist$ cd build
